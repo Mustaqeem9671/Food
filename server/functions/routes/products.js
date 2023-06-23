@@ -308,7 +308,7 @@ console.log("inside the orders");
       customer: intent.customer_details,
       shipping_details: intent.shipping_details,
       userId: customer.metadata.user_id,
-      items: JSON.parse(customer.metadata.cart),
+      items: JSON.parse(customer.metadata.cart), 
       total: customer.metadata.total,
       sts: "preparing",
     };
