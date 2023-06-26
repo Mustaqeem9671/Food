@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUserDetails } from "./context/actions/userActions";
 import { motion } from "framer-motion";
 import { fadeInOut } from "./Animations";
-import { MainLoader } from "./components";
+import { MainLoader, UsersOrder } from "./components";
 import { Alert } from "./components";
 import { setCartItems } from "./context/actions/cartActions";
 import { CheckOutSuccess } from "./components";
@@ -58,7 +58,7 @@ const alert = useSelector((state) => state.alert);
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/checkout-success" element={<CheckOutSuccess />} />
-     
+        <Route path="/user-orders" element={<UsersOrder />} />
       </Routes>
 
     {alert?.type && <Alert type={alert?.type} message={alert?.message} />}

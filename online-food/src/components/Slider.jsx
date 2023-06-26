@@ -21,8 +21,8 @@ const Slider = () => {
   return (
     <div className="w-full pt-24" >
  <Swiper
-        slidesPerView={4}
-        centeredSlides={false}
+        slidesPerView={6}
+        centeredSlides={true}
         spaceBetween={30}
         grabCursor={true}
       
